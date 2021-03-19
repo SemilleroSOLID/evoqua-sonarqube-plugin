@@ -31,7 +31,8 @@ module.exports = {
 
     // Using React:
     portfolio_page: ["./src/main/js/portfolio_page/index.js"],
-    admin_page: ["./src/main/js/admin_page/index.js"]
+    admin_page: ["./src/main/js/admin_page/index.js"],
+    project_metric_history_page: ["./src/main/js/project_metric_history_page/index.js"],
   },
   output: {
     // The entry point files MUST be shipped inside the final JAR's static/

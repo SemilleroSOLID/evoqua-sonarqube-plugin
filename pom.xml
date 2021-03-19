@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.apiVersion>8.3.1.34397</sonar.apiVersion>
+    <sonar.apiVersion>8.0</sonar.apiVersion>
     <jdk.min.version>1.8</jdk.min.version>
     <sonar.sources>src/main/java,src/main/js</sonar.sources>
   </properties>
@@ -102,6 +102,9 @@
             <goals>
               <goal>yarn</goal>
             </goals>
+            <configuration>
+                <arguments>--network-timeout 100000</arguments>
+            </configuration>
           </execution>
           <execution>
             <phase>generate-resources</phase>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Build the plugin JAR file</actionName>
+            <displayName>Build the plugin JAR file</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-Build the plugin JAR file (just package)</actionName>
+            <displayName>Build the plugin JAR file (just package)</displayName>
+            <goals>
+                <goal>package</goal>
+            </goals>
+        </action>
+    </actions>
