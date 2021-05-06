@@ -1,23 +1,23 @@
 import React from "react";
 import Plot from 'react-plotly.js';
 
-export default function MetricHistory(props) {
-  const metrica = props.data;
+export default function MetricHistory({ metricHistory }) {
+  const { name, versions, values } = metricHistory;
   return (
     <Plot
       data={[{
-        x: metrica.versiones,
-        y: metrica.valores,
+        x: versions,
+        y: values,
         fill: 'tozeroy', // area chart
       }]}
       layout={{
         autosize: true,
-        title: `${metrica.nombre} por versión`,
+        title: `${name} por versión`,
         xaxis: {
           title: { text: 'Versión' },
           //type: 'category',
         },
-        yaxis: { title: { text: metrica.nombre } },
+        yaxis: { title: { text: name } },
       }}
       config={{
         displayModeBar: true,
@@ -25,5 +25,6 @@ export default function MetricHistory(props) {
       }}
       useResizeHandler={true}
       style={{ width: "100%", height: "100%" }}
-    />);
+    />
+  );
 }

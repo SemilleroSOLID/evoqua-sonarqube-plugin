@@ -11,3 +11,6 @@ sonar-example-plugin.iml
 .classpath
 .project
 .settings/
+
+# VS Code
+.vscode
